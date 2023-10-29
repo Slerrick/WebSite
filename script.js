@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	let button = document.getElementById("but_id");
 	let button_menu = document.getElementById("menu_open");
 	let button_bar = document.getElementById("menu_bar");
-	let section = document.getElementById("main_for_text");
 	//END
 	//EVENT OF BUTTON
 	button.addEventListener("click", function PlusScores(some) {
@@ -56,23 +55,18 @@ document.addEventListener("DOMContentLoaded", function() {
 	//END
 	//main menu opening
 
-    let opening = false;
-    button_menu.addEventListener("click", function Open_menu(anything) {
-		if (!opening){
-		button_bar.style.animation = "forwards 1 1s slide_bar ease alternate";
-		opening = true;
-		}else{
-			button_bar.style.animation = "forwards 1 1s slide_bar_in ease alternate";
-			opening = false;
-		}
+     let opening = false;
+     button_menu.addEventListener("click", function Open_menu(anything) {
+	 	if (!opening){
+	 	button_bar.style.animation = "forwards 1 1s slide_bar ease alternate";
+	 	opening = true;
+	 	}else{
+	 		button_bar.style.animation = "forwards 1 1s slide_bar_in ease alternate";
+	 		opening = false;
+	 	}
 		
-	})
+	 })
 	//END
 	//START OPEN OTHER HTML
-	document.getElementById("About_school").addEventListener("click", function About_school(params) {
-		section.textContent = section.innerHTML = "";
-		section.innerHTML =open("scripts/about-shool.txt", true);
-	})
-	
 });
 //END
