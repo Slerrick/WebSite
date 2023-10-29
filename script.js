@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	let button = document.getElementById("but_id");
 	let button_menu = document.getElementById("menu_open");
 	let button_bar = document.getElementById("menu_bar");
+	let section = document.getElementById("main_for_text");
 	//END
 	//EVENT OF BUTTON
 	button.addEventListener("click", function PlusScores(some) {
@@ -67,5 +68,11 @@ document.addEventListener("DOMContentLoaded", function() {
 		
 	})
 	//END
+	//START OPEN OTHER HTML
+	document.getElementById("About_school").addEventListener("click", function About_school(params) {
+		section.textContent = section.innerHTML = "";
+		section.innerHTML =open("scripts/about-shool.txt", true);
+	})
+	
 });
 //END
