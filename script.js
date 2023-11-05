@@ -1,23 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
-	const color_score = ["white", "black", "gold", "green", "yellow", "darkred", "aqua"]
 		//RANDOM ELEMENT
-		//#FF00CC#DCDDFF
 	function getRandomElement(arr) {
 		const randIndex = Math.floor(Math.random() * arr.length);
 		return arr[randIndex];
 	}
-	let random_list = [0, 3, 2, 3, 4, 5, 6]
 		//END
 		//VARIABLES
-	let score = document.getElementById("scr");
+	const score = document.getElementById("scr");
 	let scores = 0;
 	let bonus = 1;
-	let bonus_text = document.getElementById("bonus");
-	let reset = document.getElementById("resetid");
-	let result = document.getElementById("info");
-	let button = document.getElementById("but_id");
-	let button_menu = document.getElementById("menu_open");
-	let button_bar = document.getElementById("menu_bar");
+	const bonus_text = document.getElementById("bonus");
+	const reset = document.getElementById("resetid");
+	const result = document.getElementById("info");
+	const button = document.getElementById("but_id");
+	const button_menu = document.getElementById("menu_open");
+	const button_bar = document.getElementById("menu_bar");
 	//END
 	//EVENT OF BUTTON
 	button.addEventListener("click", function PlusScores(some) {
