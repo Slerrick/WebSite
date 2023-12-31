@@ -44,7 +44,7 @@ img{
 	height: 10vw;
 	transition: .3s;
 	border-radius: 0 1.4vmin;
-	top: 0%;
+	top: 0;
 	z-index: 2;
 }
 .menu_open:hover{
@@ -57,6 +57,12 @@ img{
 	width: 30vw; 
 	right: 100%;
 	animation:none;
+	display: inline-flex;
+	justify-content: stretch;
+	align-items: self-start;
+	flex-flow: column;
+	flex-wrap: wrap;
+
 }
 
 @keyframes slide_bar{
