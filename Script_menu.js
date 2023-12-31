@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     let button_menu = document.getElementById("menu_open");
 	let button_bar = document.getElementById("menu_bar");
+
+
     //END
 	//main menu opening
+
+
     let opening = false;
     button_menu.addEventListener("click", function Open_menu(anything) {
 		if (!opening){
@@ -14,4 +18,29 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 		
 	})
+
+
+     //END
+	 //start create href on other html
+
+
+	let links = [
+		{ href: 'about-school.html', text: 'О школе' },
+		{ href: 'index.html', text: 'Кликер' },
+		{ href: 'me.html', text: 'Кто я?' },
+		{ href: 'calculate.html', text: 'Тех.часть' },
+	  ];
+
+	  const element = button_bar
+	  
+	  links.forEach(link => {
+		let anchor = document.createElement('a');
+		anchor.href = link.href;
+		anchor.textContent = link.text;
+		element.appendChild(anchor);
+	  });
+
+
+    //END
+
 })
