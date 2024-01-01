@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-
     let button_menu = document.getElementById("menu_open");
 	let button_bar = document.getElementById("menu_bar");
 
 
     //END
 	//main menu opening
+
 
     let opening = false;
     button_menu.addEventListener("click", function Open_menu(anything) {
@@ -26,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 	let links = [
-		{ href: 'about-school.html', text: 'О школе' },
-		{ href: '../index.html', text: 'Кликер' },
-		{ href: 'me.html', text: 'Кто я?' },
-		{ href: 'calculate.html', text: 'Тех.часть' },
+		{ href: 'scripts/about-school.html', text: 'О школе' },
+		{ href: 'index.html', text: 'Кликер' },
+		{ href: 'scripts/me.html', text: 'Кто я?' },
+		{ href: 'scripts/calculate.html', text: 'Тех.часть' },
 	  ];
 
 	  const element = button_bar

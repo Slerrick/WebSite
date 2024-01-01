@@ -64,6 +64,5 @@ document.addEventListener("DOMContentLoaded", function() {
 		
 	 })
 	//END
-	//START OPEN OTHER HTML
 });
 //END

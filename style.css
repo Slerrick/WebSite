@@ -54,7 +54,7 @@ img{
 	z-index: 1;
 	height: 100vh;
 	background-color: rgb(255, 165, 0, 0.8);
-	width: 30vw; 
+	width: 30vw;
 	right: 100%;
 	animation:none;
 	display: inline-flex;
