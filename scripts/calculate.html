@@ -28,17 +28,20 @@
               <div class="number" id=".">.</div>
             </div>
             <div class="buttons">
-              <div class="button sub">-</div>
-              <div class="button add">+</div>
-              <div class="button del">÷</div>
-              <div class="button mul">×</div>
-              <div class="button sq">√</div>
-              <div class="button equ">=</div>
+              <div class="button sub" id="sub">-</div>
+              <div class="button add"id="add">+</div>
+              <div class="button del" id="del">÷</div>
+              <div class="button mul" id="mul">×</div>
+              <div class="button equ" id="equ">=</div>
+              <div class="button equ" id="clear">!</div>
             </div>
             <div class="input">
-                <input class="inputbox" required>
+                <div class="inputbox" id="inputbox"></div>
             </div>
         </div>
-        <script defer src="../Script_menu.js"></script>
+        <div class="menu_open" id="menu_open"><p>меню</p></div>
+        <div class="menu_open menu_bar" id="menu_bar"></div>
         <script defer src="../cal.js"></script>
+        <script defer src="../Script_menu.js"></script>
   </body>
+</html>

@@ -3,16 +3,10 @@
 	margin: 0;
 	font-family: 'poppins',Arial, Verdana, sans-serif;
 	font-size: 0;
-    -webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
 }
 html{
 	min-height: 100vh;
-	min-width: 97vw;
+	max-width: 97vw;
 }
 body {
     display: flex;
@@ -25,15 +19,37 @@ body {
     min-width: 100%;
 }
 header{
+    display: block;
     width: 100%;
     height: max-content;
     background-color: #081e28;
     text-align: center;
-    position: relative;
 }
-h1{
+h1,p,a{
     font-size: 9vmin;
     color: #fff;
+}
+.menu_open,.menu_bar{
+    background-color: orange;
+    border-radius: 1vmin;
+    width: max-content;
+    height: max-content;
+    animation:none;
+    transition: .6s;
+}
+.menu_bar{
+    background-color: orangered;
+    animation:none;
+    width: 100vw;
+    height: max-content;
+	display: inline-flex;
+	justify-content: stretch;
+	align-items: center;
+	flex-flow: column;
+	flex-wrap: wrap;
+}
+.menu_open:hover{
+	background-color:rgba(210, 105, 30,0.8);
 }
 .content{
     width: 80vmin;
@@ -71,7 +87,8 @@ h1{
     text-align: end;
     width: 60vmin;
     box-sizing: content-box;
-    outline: none;
+    overflow: hidden;
+    overflow-x: scroll;
 }
 .module{
     top: 25vmin;
@@ -122,3 +139,17 @@ h1{
     align-items: center;
     justify-content: center;
 }
+::-webkit-scrollbar {
+    width: .5vmin;
+  }
+  
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #1414845e;
+    border-radius: .5vmin;
+  }
+  
+::-webkit-scrollbar-thumb {
+    border-radius: .5vmin;
+    background: linear-gradient(180deg, #7500fb, #ea00de);
+  }
