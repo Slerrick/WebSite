@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	})
 
 
-     //END
+     //END)
 	 //start create href on other html
 
 
