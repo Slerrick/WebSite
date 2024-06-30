@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function(){
       }
 
 
-    one.addEventListener('click', function Adb(){
+    one.addEventListener('click', function Add1(){
         Add(1)
     });
     two.addEventListener("click", function Add2(){
