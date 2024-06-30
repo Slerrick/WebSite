@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function(){
           }
           return result;
         } catch (error) {
-          return "Ошибка епт.";
+          return "Ошибка~.";
         }
       }
       
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function(){
       }
 
 
-    one.addEventListener('click', function Ad(){
+    one.addEventListener('click', function Adb(){
         Add(1)
     });
     two.addEventListener("click", function Add2(){
@@ -107,9 +107,10 @@ document.addEventListener('DOMContentLoaded', function(){
     clear.addEventListener("click", function(){
         inputbox.textContent = ""
     });
+
+    let a = ""
     equ.addEventListener('click', function Result(somes) {
-        b = inputbox.textContent 
-        inputbox.textContent = ComputeStringExpression(b)
+        inputbox.textContent = (Math.round(ComputeStringExpression(inputbox.textContent) * 1_000_000)) / 1_000_000
     });
 
 })
