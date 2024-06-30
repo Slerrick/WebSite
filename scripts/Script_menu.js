@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 	let links = [
 		{ href: 'about-school.html', text: 'О школе' },
-		{ href: '../index.html', text: 'Кликер' },
+		{ href: 'index.html', text: 'Кликер' },
 		{ href: 'me.html', text: 'Кто я?' },
 		{ href: 'calculate.html', text: 'Тех.часть' },
 	  ];
