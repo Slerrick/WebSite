@@ -153,3 +153,9 @@ h1,p,a{
     border-radius: .5vmin;
     background: linear-gradient(180deg, #7500fb, #ea00de);
   }
+
+#mymap{
+   width: 60vw;
+   height: 40vw;
+   background-color: #000;
+}

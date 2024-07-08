@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style_base.css">
     <link rel="icon" type="image" href="https://i.postimg.cc/WbvxWtX3/2023-11-08-0yk-Kleki.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad38750bf0137715771a89658ed53c05d67877863192d71377c077f6b2543ae17&amp;width=100%&amp;height=100%&amp;id=mymap&amp;lang=ru_RU&amp;scroll=true&amp;apikey=cced76e1-c10b-441d-a217-a98309986b61"></script>
   </head>
   <body>
     <header>
@@ -38,7 +39,13 @@
                 <div class="inputbox" id="inputbox"></div>
             </div>
         </div>
-        <div class="menu_open" id="menu_open"><p>меню</p></div>
+        <div class="menu_open" id="menu_open"><p>Моя школа на карте</p></div>
+
+        <div id="mymap"></div>
+
+        <p>Один из моих блюпринтов</p>
+        <iframe title="myFrame" src="https://blueprintue.com/render/_rwr_u3p/" scrolling="no" allowfullscreen width="80%" height="600px"></iframe>
+
         <div class="menu_open menu_bar" id="menu_bar"></div>
         <script defer src="scripts/cal.js"></script>
         <script defer src="scripts/Script_menu.js"></script>
